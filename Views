@@ -1,0 +1,12 @@
+categories            -list of categories
+categorory/:name      -posting in categories
+
+Posting Control States
+  posting/:id           -viewing posting(ie.posting.view)
+  posting/:id/edit      -edit posting (ie.posting.edit)
+  posting/:id/new       -creating a new post (ie.posting.new)
+  
+user/:id                -returns a public view
+login                   -login view
+account                 -service provider view 
+search                  serch for posting
