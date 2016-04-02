@@ -24,6 +24,7 @@ Posting Table
 
 Category Table
   ID
+  Shortname(for url purposes)
   Name
   Description
   Active
