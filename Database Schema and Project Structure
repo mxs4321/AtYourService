@@ -59,9 +59,9 @@ Report Table
 Project Structure
 .tmp
 app/
-  .api/
-  ng/
+  .api/       (server files)
+  ng/         (angular files for browser)
 test/
   -vnit
-Gruntfile.js
+Gruntfile.js  (what is run to build hte project)
 package.json
