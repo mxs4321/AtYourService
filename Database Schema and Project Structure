@@ -64,4 +64,4 @@ app/
 test/
   -vnit
 Gruntfile.js  (what is run to build hte project)
-package.json
+package.json  (defines basic attributes of project: name, license, scripts)
