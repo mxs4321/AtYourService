@@ -55,3 +55,13 @@ Report Table
   Resolution
   Status
 
+
+Project Structure
+.tmp
+app/
+  .api/
+  ng/
+test/
+  -vnit
+Gruntfile.js
+package.json
