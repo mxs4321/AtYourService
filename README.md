@@ -15,6 +15,11 @@
  - karma
  - pm2
 
+##Compass
+
+[Compass](http://compass-style.org/install/) is a CSS preprocessor (build in ruby) that already is integrated into our build scripts. It
+is used by [Bootstrap](http://getbootstrap.com/) (awesome UI framework by twitter).
+
 ##Setup and Running the App
 
 Unless otherwise noted, you should run commands from the root directory of the project.

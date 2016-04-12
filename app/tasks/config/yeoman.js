@@ -8,3 +8,5 @@ module.exports = function(grunt){
 
   return appConfig;
 };
+
+module.exports.app = appConfig;

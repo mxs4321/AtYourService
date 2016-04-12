@@ -3,7 +3,9 @@
  */
 module.exports = function(grunt){
 
-  var yeoman = require('./yeoman');
+  var yeoman = require('./yeoman'),
+    serveStatic = require('serve-static');
+
   grunt.config.set('connect', {
     options: {
       port: 9000,
@@ -16,16 +18,16 @@ module.exports = function(grunt){
         open: true,
         middleware: function (connect) {
           return [
-            connect.static('.tmp'),
+            serveStatic('.tmp'),
             connect().use(
-              '/bower_components',
-              connect.static('./bower_components')
+              '/app/bower_components',
+              serveStatic('./app/bower_components')
             ),
             connect().use(
               '/app/styles',
-              connect.static('./app/styles')
+              serveStatic('./app/styles')
             ),
-            connect.static(yeoman.app.app)
+            serveStatic(yeoman.app.app)
           ];
         }
       }
@@ -35,13 +37,13 @@ module.exports = function(grunt){
         port: 9001,
         middleware: function (connect) {
           return [
-            connect.static('.tmp'),
-            connect.static('test'),
+            serveStatic('.tmp'),
+            serveStatic('test'),
             connect().use(
-              '/bower_components',
-              connect.static('./bower_components')
+              '/app/bower_components',
+              serveStatic('.app/bower_components')
             ),
-            connect.static(yeoman.app.app)
+            serveStatic(yeoman.app.app)
           ];
         }
       }
@@ -53,4 +55,6 @@ module.exports = function(grunt){
       }
     }
   });
+
+  grunt.loadNpmTasks('grunt-contrib-connect');
 };
