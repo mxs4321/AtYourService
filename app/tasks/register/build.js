@@ -22,6 +22,22 @@ module.exports = function(grunt) {
     'compileAssets',
     'linkAssetsBuild',
     'clean:build',
-    'copy:build'
+    'copy:build',
+    //From Yeoman
+    'clean:dist',
+    'wiredep',
+    //'useminPrepare',
+    //'concurrent:dist',
+    //'postcss',
+    //'ngtemplates',
+    //'concat',
+    //'ngAnnotate',
+    'copy:dist'
+    //'cdnify',
+    //'cssmin',
+    //'uglify',
+    //'filerev',
+    //'usemin',
+    //'htmlmin'
   ]);
 };
