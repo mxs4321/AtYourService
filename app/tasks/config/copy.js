@@ -25,9 +25,20 @@ module.exports = function(grunt) {
     dev: {
       files: [{
         expand: true,
-        cwd: './assets',
-        src: ['**/*.!(coffee|less)'],
+        cwd: '<%= yeoman.app %>',
+        src: [
+          '*.{ico,png,txt}',
+          '*.html',
+          'scripts/{,*/}*',
+          'images/{,*/}*.{webp}',
+          'styles/fonts/{,*/}*.*'
+        ],
         dest: '.tmp/public'
+      },{
+        expand: true,
+        cwd: 'app/bower_components',
+        src: ['**/*'],
+        dest: '.tmp/public/bower_components'
       }]
     },
     build: {
@@ -47,6 +58,7 @@ module.exports = function(grunt) {
         src: [
           '*.{ico,png,txt}',
           '*.html',
+          '../index.html',
           'images/{,*/}*.{webp}',
           'styles/fonts/{,*/}*.*'
         ]

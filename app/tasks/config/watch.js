@@ -20,7 +20,7 @@ module.exports = function(grunt) {
     assets: {
 
       // Assets to watch:
-      files: ['assets/**/*', 'tasks/pipeline.js', '!**/node_modules/**'],
+      files: ['assets/**/*', 'index.html', 'tasks/pipeline.js', '!**/node_modules/**'],
 
       // When assets are changed:
       tasks: ['syncAssets' , 'linkAssets' ]
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
     },
     js: {
       files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
-      tasks: ['newer:jshint:all', 'newer:jscs:all'],
+      tasks: ['newer:jshint:all'/*, 'newer:jscs:all'*/],
       options: {
         livereload: '<%= connect.options.livereload %>'
       }

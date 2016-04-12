@@ -5,7 +5,12 @@ module.exports = function(grunt){
   grunt.config.set('jshint', {
     options: {
       jshintrc: '.jshintrc',
-      reporter: require('jshint-stylish')
+      reporter: require('jshint-stylish'),
+      ignores: [
+        'node_modules/**/*.js',
+        'bower_components/**/*.js',
+        'app/ng/scripts/dependencies/sails.io.js'
+      ]
     },
     all: {
       src: [
@@ -20,5 +25,6 @@ module.exports = function(grunt){
       src: ['test/spec/{,*/}*.js']
     }
   });
-  
+
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 };

@@ -18,6 +18,9 @@
  *
  */
 module.exports = function(grunt) {
+
+  grunt.log.write("Running Build Task");
+
   grunt.registerTask('build', [
     'compileAssets',
     'linkAssetsBuild',
