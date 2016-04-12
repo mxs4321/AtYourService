@@ -41,11 +41,12 @@ Other tasks are run when different files are changed:
  - *(In progress)* When CSS/SCSS files are changed they will be recompiled and loaded into the browser (no refresh needed).
 
 
- ##Project Structure
+##Project Structure
 
 `(directory/)` = directory ignored in git
 
  ```
+ AYS
 ├─ (.tmp/) - contains the compiled distribution of our UI app
 ├─ app/ - holds application code
 │  ├─ api/ - Sails app logic
