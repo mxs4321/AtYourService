@@ -460,8 +460,7 @@ module.exports = function (grunt) {
         'svgmin'
       ]
     },
-
-    //TODO
+    
     // Test settings
     karma: {
       unit: {

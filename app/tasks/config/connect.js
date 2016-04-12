@@ -3,7 +3,7 @@
  */
 module.exports = function(grunt){
 
-
+  var yeoman = require('./yeoman');
   grunt.config.set('connect', {
     options: {
       port: 9000,
@@ -25,7 +25,7 @@ module.exports = function(grunt){
               '/app/styles',
               connect.static('./app/styles')
             ),
-            connect.static(me.app.app)
+            connect.static(yeoman.app.app)
           ];
         }
       }
@@ -41,7 +41,7 @@ module.exports = function(grunt){
               '/bower_components',
               connect.static('./bower_components')
             ),
-            connect.static(me.app.app)
+            connect.static(yeoman.app.app)
           ];
         }
       }
