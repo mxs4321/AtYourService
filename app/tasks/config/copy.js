@@ -33,22 +33,22 @@ module.exports = function(grunt) {
           'images/{,*/}*.{webp}',
           'styles/fonts/{,*/}*.*'
         ],
-        dest: '.tmp/public'
+        dest: '<%= yeoman.dist %>'
       },{
         expand: true,
         cwd: 'app/bower_components',
         src: ['**/*'],
-        dest: '.tmp/public/bower_components'
+        dest: '<%= yeoman.dist %>/bower_components'
       }]
     },
-    build: {
-      files: [{
-        expand: true,
-        cwd: '.tmp/public',
-        src: ['**/*'],
-        dest: 'www'
-      }]
-    },
+    // build: {
+    //   files: [{
+    //     expand: true,
+    //     cwd: '.tmp/public',
+    //     src: ['**/*'],
+    //     dest: 'www'
+    //   }]
+    // },
     dist: {
       files: [{
         expand: true,

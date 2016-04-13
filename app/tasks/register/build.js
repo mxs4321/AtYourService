@@ -24,10 +24,9 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'compileAssets',
     'linkAssetsBuild',
-    'clean:build',
-    'copy:build',
+    //'clean:build',
     //From Yeoman
-    'clean:dist',
+    //'clean:dist',
     'wiredep',
     //'useminPrepare',
     //'concurrent:dist',
@@ -35,12 +34,12 @@ module.exports = function(grunt) {
     //'ngtemplates',
     //'concat',
     //'ngAnnotate',
-    'copy:dist'
     //'cdnify',
     //'cssmin',
     //'uglify',
     //'filerev',
     //'usemin',
     //'htmlmin'
+    'copy:dev'
   ]);
 };
