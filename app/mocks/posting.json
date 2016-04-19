@@ -1,0 +1,41 @@
+[
+    {
+        "seller_id":"Brianna Jones",
+        "id": "-1",
+        "title":"stuff",
+        "category_id":"Hand Made",
+        "image":null,
+        "name":"Scarves",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed ipsum nisl",
+        "date":"4/16/16",
+        "tags": [],
+        "skills": [],
+        "active": true
+    },
+    {
+        "seller_id":"Mohammed Suhail",
+        "id":"-2",
+        "title":"otherStuff",
+        "category_id":"Fix it",
+        "image":null,
+        "name":"Router",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed ipsum nisl",
+        "date":"4/13/16",
+        "tags": [],
+        "skills": [],
+        "active": true
+    },  
+    {                  
+        "seller_id":"Greg Rozmarynowycz",
+        "id": "-3",
+        "title":"otherOtherStuff",
+        "category_id":"Other",
+        "image":null,
+        "name":"Web Dev",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed ipsum nisl",
+        "date":"4/12/16",
+        "tags": [],
+        "skills": [],
+        "active": true
+    }
+]
