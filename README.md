@@ -27,7 +27,7 @@ Unless otherwise noted, you should run commands from the root directory of the p
 Every time `package.json` changes, you will need to run `npm i`. This command installs all *local* NPM modules defined for the project.
 This also applies to `bower.json`, which handles browser dependencies through [Bower](http://bower.io/). For the Bower components, run `bower i`.
 
-To start the Sails server, you need to run `sails lift` ~~`npm start`. This command points to a script defined in `package.json` that runs the server.~~
+To start the Sails server, you need to run ~~`sails lift`.~~ `npm start`. This command points to a script defined in `package.json` that runs the server.
 When the sails server is running, you can view the app at `http://localhost:1337`. (I don't have PM2 working with sails yet, so don't worry about it)
 You will see message in your browser console similar to `Now connected to Sails`.
 

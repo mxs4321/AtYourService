@@ -1,13 +1,46 @@
+"use strict";
 /**
  * Created by Greg on 4/15/2016.
  */
+var postings = require('../../mocks/posting.json');
+
 module.exports = {
-  retrieve(req, res, next){
+  findOne(req, res, next){
+    try {
+      var id = req.allParams()['id'];
+      console.log("retrieve posting " + id);
+
+      var posting = postings.filter(function(posting){
+        return posting.id == id;
+      }).pop();
+      
+      if(posting){
+        res.ok(posting);
+      }
+      else {
+        res.notFound();
+      }
+
+    } catch (e) {
+      next(e);
+    }
+  },
+
+  find(req, res, next){
+    try {
+      console.log("retrieve postings");
+      res.set('Content-Type','application/json');
+      res.ok(postings ? postings : []);
+    } catch (e) {
+      next(e);
+    }
+  },
+
+  create(req, res, next){
     try {
       //TODO: return mock data
-
-      res.status(200);
-      res.set('Conent-Type','application/json');
+      console.log("create posting");
+      res.set('Content-Type','application/json');
       res.ok({});
     } catch (e) {
       next(e);

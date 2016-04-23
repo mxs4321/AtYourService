@@ -1,6 +1,6 @@
 var appConfig = {
   app: require('./../../../bower.json').appPath || 'app',
-  dist: '.tmp/public'
+  dist: 'app/.tmp/public'
 };
 
 module.exports = function(grunt){
