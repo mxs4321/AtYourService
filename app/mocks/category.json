@@ -1,0 +1,51 @@
+[
+	{
+		"ID":"1",
+		"Shortname":"rides",
+		"Name":"Ride Sharing",
+		"Description":"Ride Sharing for when you need to get around, but can't get a car.",
+		"Active":"true"
+	},
+	{
+		"ID":"2",
+		"Shortname":"beauty",
+		"Name":"Beauty",
+		"Description":"Nails. Makeup. All Cosmetics.",
+		"Active":"true"
+	},
+	{
+		"ID":"3",
+		"Shortname":"tutor",
+		"Name":"Tutor",
+		"Description":"Homework hard. Find homework help here.",
+		"Active":"true"
+	},
+	{
+		"ID":"4",
+		"Shortname":"house",
+		"Name":"Housings",
+		"Description":"Need a place. Post here.",
+		"Active":"true"
+	},
+	{
+		"ID":"5",
+		"Shortname":"other",
+		"Name":"Other",
+		"Description":"A place to post when categories don't seem to fit.",
+		"Active":"true"
+	},
+	{
+		"ID":"6",
+		"Shortname":"fix",
+		"Name":"FixIt",
+		"Description":"Helping others fix thier things.",
+		"Active":"true"
+	},
+	{
+		"ID":"6",
+		"Shortname":"test",
+		"Name":"Test",
+		"Description":"For Testing",
+		"Active":"false"
+	}
+]
